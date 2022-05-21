@@ -47,7 +47,7 @@ function saludo(idioma) {
 return "Ni Hao!";
 }else if (idioma === "ingles"){
   return "Hello!";
-}else return "hola!";
+}else return "Hola!";
 }
 
 function colors(color) {
@@ -60,15 +60,15 @@ function colors(color) {
   //Usar el statement Switch.
 switch (color){
  case "blue":
-  return "this is blue ";
+  return "This is blue ";
  case "red":
-  return "this is red";
+  return "This is red";
   case "green" :
-  return "this is green";
+  return "This is green";
 case  "orange":
-     return "this is orange";
+     return "This is orange";
 
-  default : "color not found";
+  default : "Color not found";
 }   
 }
 
