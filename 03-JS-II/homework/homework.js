@@ -122,11 +122,11 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 if (num1 ===0 || num2 === 0 || num3 ===0){
   return "Error";
-} 
-else if (num1 < 0 || num2 <0 || num3 <0){
-  return "Hay Negativos";
+  
 }else if(num1>num2 && num1> num3 && num1 >0){
-  return "Numero1 es mayor y positivo";
+  return "Numero 1 es mayor y positivo";
+}else if (num1 < 0 || num2 <0 || num3 <0){
+    return "Hay Negativos";
 }else if (num3> num1 && num3>num2){
   return num3+1
 }else return "false"
@@ -144,7 +144,7 @@ if (numero ===2 ){
  } for (var i=2; i< numero ;i++){
     if (numero %i ===0 ){
       return false;
-    }
+    } 
   }
 return true; 
 }
