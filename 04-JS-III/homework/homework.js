@@ -10,7 +10,7 @@ return array [0];
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-return[array.length-1];
+return array[array.length - 1];
 }
 
 
@@ -18,7 +18,7 @@ return[array.length-1];
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-return array.length
+return array.length;
 }
 
 
@@ -29,8 +29,8 @@ function incrementarPorUno(array) {
   // Tu código:
  var arrayincrementado = [];
    for (var i=0; i <array.length; i++){
-   arrayincrementado.push(array[i]+1)
- }return arrayincrementado;
+   arrayincrementado [i] = array[i]+1 
+  }return arrayincrementado;
 
 }
 
@@ -39,8 +39,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
- array.push(elemento);
-
+ array[array.length] = elemento ;
+return array;
 }
 
 
@@ -50,7 +50,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Pista: usa el método `.unshift`
   // Tu código:
 array.unshift(elemento);
-
+return array;
 }
 
 
@@ -59,8 +59,8 @@ function dePalabrasAFrase(palabras) {
   // Devuelve un string donde todas las palabras estén concatenadas
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
-  // Tu código:
-  return palabras.join('')
+  // Tu código: 
+  return palabras.join(' ');
 
 }
 
@@ -96,11 +96,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-var resultados=0;
-for (var i=o;i< resultadosTest.len;i++){
-  resultados += resultadosTest[i]
-
-  }return resultados/array.length;
+  return agregarNumeros(resultadosTest) / resultadosTest.length;
 
 }
 
@@ -112,7 +108,7 @@ function numeroMasGrande(numeros) {
 var grande=0;
 for (var i=0; i < numeros.length;i++){
   if (numeros[i]>grande){
-    grande = numero[i]
+    grande = numero[i];
   }
 
 }return grande;
@@ -124,18 +120,16 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  var acumulador=1;
-if (arguments.length===0){
-  return 0;
-}else if (arguments.length === 1){
-return arguments[0];
-}else{
-  for(var i=0; i <arguments.length; i++); {
-acumulador= acumulador*arguments[i]
+  if(arguments.length < 1) return 0;
+  var total = 1;
+  for(var i = 0; i < arguments.length; i++) {
+    total = total * arguments[i];
   }
-
-}return acumulador;
+  return total;
 }
+
+
+
 
 
 function cuentoElementos(arreglo){
