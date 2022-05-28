@@ -105,14 +105,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-var grande=0;
-for (var i=0; i < numeros.length;i++){
-  if (numeros[i]>grande){
-    grande = numero[i];
+  var maximo = numeros[0];
+  for(var i = 1; i < numeros.length; i++) {
+    if(numeros[i] > maximo) { 
+      maximo = numeros[i];
+    }
   }
-
-}return grande;
-
+  return maximo;
 }
 
 
@@ -135,6 +134,11 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+var contenedor = [];
+  for (var i=0; i < arreglo.length; i++){
+if (arreglo[i]   >18 );
+contenedor.push(arreglo[i]);
+  }return contenedor
 
 }
 
@@ -144,7 +148,10 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
+  if (numeroDeDia === 1 || numeroDeDia === 6){
+    return "Es fin de semana";
+
+  }return " Es Dia Laboral"
 } 
 
 
@@ -152,7 +159,12 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+var nuevostring= n.tostring();
+if (nuevostring[0] === "9" ){
+return true;
+}else {
+  return false; 
+}
 }
 
 
